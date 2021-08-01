@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Body.css";
 import Button from "./Button";
 import ButtonHeading from "./ButtonHeading";
+import Footer from "./Footer";
 
 function Body() {
   return (
@@ -28,12 +29,12 @@ function Body() {
         </div>
         <div className="row-4">
           <span>
-            <ButtonHeading text='&lt;Button variant="text"/&gt;' />
-            <Button />
+            <ButtonHeading text="&lt;Button disabled/&gt;" />
+            <Button disabled />
           </span>
           <span>
             <ButtonHeading text='&lt;Button disabled variant="text"/&gt;' />
-            <Button disabled />
+            <Button disabled variant="text" />
           </span>
         </div>
         <div className="row-5">
@@ -44,16 +45,6 @@ function Body() {
           <span>
             <ButtonHeading text='&lt;Button endIcon="local_grocery_store"/&gt;' />
             <Button endIcon="local_grocery_store" color="primary" />
-          </span>
-        </div>
-        <div className="row-6">
-          <span>
-            <ButtonHeading text='&lt;Button disabled variant="text"/&gt;' />
-            <Button disabled />
-          </span>
-          <span>
-            <ButtonHeading text="&lt;Button " />
-            <Button disabled variant="text" />
           </span>
         </div>
         <div className="row-7">
@@ -88,6 +79,7 @@ function Body() {
             <Button color="danger" />
           </span>
         </div>
+        <Footer />
       </div>
     </article>
   );
